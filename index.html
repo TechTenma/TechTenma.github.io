@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>世界の挨拶</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>世界の挨拶</h1>
+  <button onclick="sayHello()">挨拶する</button>
+  <div id="output"></div>
+
+  <script>
+    function sayHello() {
+      var output = document.getElementById("output");
+      var randomIndex = Math.floor(Math.random() * greetings.length);
+      output.textContent = greetings[randomIndex];
+    }
+    var greetings = [
+      "こんにちは",
+      "Hello",
+      "Bonjour",
+      "Hola",
+      // 他の言語の挨拶を追加する場合は、このように追記します
+    ];
+  </script>
+</body>
+</html>
